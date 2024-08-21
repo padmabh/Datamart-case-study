@@ -30,7 +30,7 @@ select * from clean_weekly_sales limit 10;
 
 
 -- DATA EXPLORATION
--- 1) which week number are missing from the dataset?
+-- 1) which week numbers are missing from the dataset?
 create table senquence100 (x int auto_increment primary key);
 insert into senquence100 values (),(),(),(),(),(),(),(),(),();
 insert into senquence100 values (),(),(),(),(),(),(),(),(),();
@@ -50,7 +50,7 @@ SELECT
   SUM(transactions) AS total_transactions
 FROM clean_weekly_sales group by calender_year;
 
--- 3)  3.What are the total sales for each region for each month?
+-- 3)  What are the total sales for each region for each month?
 SELECT
   month_number,
   region,
